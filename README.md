@@ -9,7 +9,7 @@ This web application contains all documentation for Uniswap products. It is buil
 - Concepts - General Uniswap information or concepts useful for using Uniswap products, such as *Liquidity* and *Fees*
 - Contracts - Uniswap smart contracts such as the V3 Contracts or *Permit2*
 - SDKs - Uniswap integrations such as the *v3-sdk* and the *Swap Widget*
-- APIs - The Uniswap APIs such the *Subgraph API*
+- APIs - The Uniswap APIs such as the *Subgraph API*
 
 ### Each item in a section should include the following:
 - *Overview*
@@ -23,7 +23,7 @@ This web application contains all documentation for Uniswap products. It is buil
 A product overview should address points such as:
 
 - What are the high level components of the product?
-- What what is the high level functionality the product offers?
+- What is the high level functionality the product offers?
 - Where does the source code of the product live?
 - Where does the code artifact live (eg *npm*) and how does someone integrate with it?
 
@@ -33,14 +33,14 @@ A good example is the [V3 Smart Contracts](./docs/contracts/v3/overview.md).
 > Guides should follow the **Principles of a Good Guide**:
 - A guide corresponds to a reusable piece of code that demonstrates a single concept in the Uniswap ecosystem.
 - Guides have three parts:
-    1. An **introduction** that explains the concept that the piece of code implements and a summary of what the guide will cover and result in.
+    1. An **introduction** that explains the concept the piece of code implements and a summary of what the guide will cover and result in.
     2. A step-by-step **walkthrough** of each line of the example code 
     3. An **output** or end state that users can test against what they’re seeing to know if they implemented correctly
 - Guides do not show source code snippets that should not be included in the example (IE using snippets from a source contract to explain how to integrate with it). If a guide needs to reference an external piece of code it should link to the source code or technical reference.
 - We keep Links and References ***only at the bottom*** of pages and reference them using footnotes to **keep distractions at a minimum**
 - Our goal is to have the developer build something within **10 minutes per guide** but also provide the option for a deep dive by providing references to extra content.
 - Guides should end with a **transition** to the next one, recommendations and real world projects examples
-- Each guides should refer to a code example in our example-repo
+- Each guide should refer to a code example in our example-repo
 - Guides should be standalone pieces
 - Use the least dependencies as possible
 - Input changes (eg address, tokens, amounts) should be in the code
@@ -89,7 +89,7 @@ Let's walk through an example by considering the *Permit2* smart contract:
 - Did I open a PR using the the [Contributing](./CONTRIBUTING.md) guidelines?
     - Yes
 - Did I update the search indices after my change was deployed?
-    - Yes I did using the [guides below](#how-to-update-search-indices-with-algolia)
+    - Yes I did use the [guides below](#how-to-update-search-indices-with-algolia)
 
 # How to create a Technical Reference
 ## How to generate markdown files from solidity Natspec comments
@@ -120,7 +120,7 @@ See https://www.npmjs.com/package/typedoc-plugin-markdown for details.
 # How to Update search indices with algolia
 
 - Create an .env file with `APPLICATION_ID` and the `API_KEY` (write access). 
-If you don't have those, one for the Engineering Managers should be able to help you.
+If you don't have those, one of the Engineering Managers should be able to help you.
 - Edit config.json file if needed:
     - Start url from updated website
     - Sitemap url from updated website: eg for docs: https://docs.uniswap.org/sitemap.xml
